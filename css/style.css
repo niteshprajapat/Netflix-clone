@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+.header{
+    width: 100%;
+    height: 90vh;
+    background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 120px 100px 250px #000,
+                inset -120px -100px 250px #000;
+    z-index: 1;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 25px 50px;
+    z-index: 2;
+}
+
+.header .navbar .logo img{
+    height: 35px;
+}
+
+.header .navbar .sign-in{
+    color: #fff;
+    background: #e50914;
+    padding: 6px 15px;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.header .navbar .select{
+    background: transparent;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 6px 13px;
+    margin-right: 30px;
+}
+
+.header .navbar .select:hover{
+    border: 1px solid #fff;
+}
+
+.header .navbar .select option{
+    background: rgb(83, 80, 80);
+}
